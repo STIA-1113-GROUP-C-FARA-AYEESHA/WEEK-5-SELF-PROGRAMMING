@@ -1,0 +1,27 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+public class MultipleSelections {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		double payment;
+		System.out.println("Enter hours: ");
+		int hours = sc.nextInt();
+		
+		if (hours > 14)
+			System.out.println("You have to pay RM50.");
+		else if (hours >= 7) {
+			payment = 3.5 * hours;
+			System.out.println("You have to pay " + payment); }
+		else {
+			payment = 2 * hours;
+			System.out.println("You have to pay " + payment); }
+
+	}
+
+}
